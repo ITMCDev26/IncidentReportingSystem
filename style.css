@@ -57,6 +57,38 @@ body {
   background: linear-gradient(90deg, #4b4bff, #000);
 }
 
+/* Row layout: button + icon */
+.btn-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Make main button stretch nicely */
+.btn-row .custom-btn {
+  flex: 1;
+}
+
+/* 🔹 Small icon button */
+.icon-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #000, #4b4bff);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #4b4bff, #000);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .title {
